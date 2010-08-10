@@ -22,3 +22,4 @@ Library
                , text             >= 0.7   && < 0.8
                , explicit-iomodes >= 0.4   && < 0.5
   exposed-modules: Data.Text.IO.ExplicitIOModes
+                   Data.Text.Lazy.IO.ExplicitIOModes
