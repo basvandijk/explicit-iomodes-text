@@ -46,23 +46,23 @@ import System.IO.ExplicitIOModes.Unsafe ( wrap, wrap2 )
 
 
 -------------------------------------------------------------------------------
--- Text I/O with file handles with explicit IOModes
+-- Lazy Text I/O with file handles with explicit IOModes
 -------------------------------------------------------------------------------
 
--- | Wraps @Data.Text.IO.'T.hGetLine'@.
+-- | Wraps @Data.Text.Lazy.IO.'T.hGetLine'@.
 hGetLine ∷ ReadModes ioMode ⇒ Handle ioMode → IO Text
 hGetLine = wrap T.hGetLine
 
--- | Wraps @Data.Text.IO.'T.hGetContents'@.
+-- | Wraps @Data.Text.Lazy.IO.'T.hGetContents'@.
 hGetContents ∷ ReadModes ioMode ⇒ Handle ioMode → IO Text
 hGetContents = wrap T.hGetContents
 
 
--- | Wraps @Data.Text.IO.'T.hPutStr'@.
+-- | Wraps @Data.Text.Lazy.IO.'T.hPutStr'@.
 hPutStr ∷ WriteModes ioMode ⇒ Handle ioMode → Text → IO ()
 hPutStr = wrap2 T.hPutStr
 
--- | Wraps @Data.Text.IO.'T.hPutStrLn'@.
+-- | Wraps @Data.Text.Lazy.IO.'T.hPutStrLn'@.
 hPutStrLn ∷ WriteModes ioMode ⇒ Handle ioMode → Text → IO ()
 hPutStrLn = wrap2 T.hPutStrLn
 
