@@ -20,6 +20,7 @@ module Data.Text.IO.ExplicitIOModes
     , hPutStrLn
     ) where
 
+
 -------------------------------------------------------------------------------
 -- Imports
 -------------------------------------------------------------------------------
@@ -38,7 +39,9 @@ import qualified Data.Text.IO as T ( hGetLine
                                    )
 
 -- from explicit-iomodes:
-import System.IO.ExplicitIOModes        ( Handle, ReadModes, WriteModes )
+import System.IO.ExplicitIOModes ( Handle
+                                 , ReadModes, WriteModes
+                                 )
 import System.IO.ExplicitIOModes.Unsafe ( wrap, wrap2 )
 
 
