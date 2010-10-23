@@ -1,5 +1,5 @@
 name:          explicit-iomodes-text
-version:       0.1.0.3
+version:       0.1.0.4
 cabal-version: >=1.6
 build-type:    Simple
 license:       BSD3
@@ -19,7 +19,7 @@ source-repository head
 Library
   GHC-Options: -Wall
   build-depends: base             >= 4   && < 4.4
-               , text             >= 0.7 && < 0.10
+               , text             >= 0.7 && < 0.11
                , explicit-iomodes >= 0.4 && < 0.7
   exposed-modules: Data.Text.IO.ExplicitIOModes
                    Data.Text.Lazy.IO.ExplicitIOModes
