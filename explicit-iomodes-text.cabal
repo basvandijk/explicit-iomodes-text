@@ -1,5 +1,5 @@
 name:          explicit-iomodes-text
-version:       0.1.0.5
+version:       0.1.0.6
 cabal-version: >=1.6
 build-type:    Simple
 license:       BSD3
@@ -13,8 +13,8 @@ synopsis:      Extends explicit-iomodes with Text operations
 description:   Extends @explicit-iomodes@ with @Text@ operations
 
 source-repository head
-  Type:     darcs
-  Location: http://code.haskell.org/~basvandijk/code/explicit-iomodes-text
+  Type:     git
+  Location: git://github.com/basvandijk/explicit-iomodes-text.git
 
 Library
   GHC-Options: -Wall
